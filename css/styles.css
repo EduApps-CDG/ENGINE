@@ -9,8 +9,13 @@
   overflow-y: hidden;
 }
 
-canvas {
+center {
   display: hidden;
+}
+
+canvas {
+  aspect-ratio: 16/9;
+  height: 100vh;
 }
 
 #load {
