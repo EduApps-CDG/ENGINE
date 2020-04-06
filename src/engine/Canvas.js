@@ -13,10 +13,10 @@ var Canvas = {
    * @see Scene
    */
   startScene: function(scene) {
-    if (scene != null) {
-      Global.ACTUAL_SCENE.destroy();
-    } else {
+    if (Global.ACTUAL_SCENE == null) {
       console.warn("[WARNING] <b>Global.ACTUAL_SCENE</b> is null");
+    } else {
+      Global.ACTUAL_SCENE.destroy();
     }
     scene.create();
     scene.draw();
